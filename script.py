@@ -68,7 +68,7 @@ class Tree:
                 fields.append("")
         fields.append(self.tag_string())
         string = ",".join([normalize_csv(field) for field in fields])
-        return f"[{string}]"
+        return string
 
     def download_images(self):
         image_count = 0
